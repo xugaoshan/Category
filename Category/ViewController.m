@@ -30,8 +30,7 @@
     NSLog(@"%@",dic);
     
     
-    NSString *str = @"年末";
-    NSLog(@"%@",str);
+    NSLog(@"%@",[@"/Users/gaoshan/Desktop/学习资料/15 - 环信项目/1231视频/1231装逼特技/资料/素材/plugin.png" MIMEType]);
     
     
 }

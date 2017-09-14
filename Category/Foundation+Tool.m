@@ -8,6 +8,7 @@
 
 #import "Foundation+Tool.h"
 #import <objc/runtime.h>
+#import <MobileCoreServices/MobileCoreServices.h>
 
 
 /*--------------------<NSObject Category>---------------------*/
@@ -119,6 +120,22 @@
     NSString *returnStr = [NSPropertyListSerialization propertyListWithData:tempData options:NSPropertyListImmutable format:&format error:nil];
     
     return [returnStr stringByReplacingOccurrencesOfString:@"\\r\\n" withString:@"\n"];
+}
+
+#pragma mark - <获得某个路径下文件的MIMEType>
+
+- (NSString *)MIMEType
+{
+    if (![[NSFileManager defaultManager] fileExistsAtPath:self]) {
+        return nil;
+    }
+    CFStringRef UTI = UTTypeCreatePreferredIdentifierForTag(kUTTagClassFilenameExtension, (__bridge  CFStringRef)[self pathExtension], NULL);
+    CFStringRef MIMEType = UTTypeCopyPreferredTagWithClass (UTI, kUTTagClassMIMEType);
+    CFRelease(UTI);
+    if (!MIMEType) {
+        return @"application/octet-stream";
+    }
+    return (__bridge NSString *)MIMEType;
 }
 
 @end

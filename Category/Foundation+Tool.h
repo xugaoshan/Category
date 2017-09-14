@@ -45,7 +45,9 @@
 
 #pragma mark - <把字符串中的中文编码转成中文>
 
-#pragma mark - <把字符串中的中文编码转成中文>
+
+#pragma mark - <获得某个路径下文件的MIMEType>
+- (NSString *)MIMEType;
 
 @end
 
