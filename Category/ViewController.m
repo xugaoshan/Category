@@ -38,6 +38,11 @@
     }];
     
     
+    NSString *str = @"134";
+    NSUInteger a = 2;
+    NSUInteger result = [str length] ?: a;
+    NSLog(@"%lu",(unsigned long)result);
+    
 }
 
 -(void)call123:(NSString *)a with1:(NSString *)b with2:(NSNumber *)c
