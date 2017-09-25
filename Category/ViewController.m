@@ -10,7 +10,7 @@
 #import "Foundation+Tool.h"
 
 
-@interface ViewController ()
+@interface ViewController ()<UIScrollViewDelegate>
 
 @end
 
@@ -48,6 +48,11 @@
 -(void)call123:(NSString *)a with1:(NSString *)b with2:(NSNumber *)c
 {
     NSLog(@"%@ %@ %ld",a,b,[c integerValue]);
+}
+
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    
 }
 
 

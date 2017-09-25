@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1rw-uH-96p">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VC" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -20,11 +22,145 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cOL-pB-0ej">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cyt-GM-NWD">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                                        <color key="backgroundColor" red="1" green="0.85174850000000002" blue="0.42876187710000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1000" id="q6A-QV-AOg"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Cyt-GM-NWD" firstAttribute="leading" secondItem="cOL-pB-0ej" secondAttribute="leading" id="hWR-AH-qKX"/>
+                                    <constraint firstItem="Cyt-GM-NWD" firstAttribute="centerX" secondItem="cOL-pB-0ej" secondAttribute="centerX" id="jOH-Bt-Rp5"/>
+                                    <constraint firstAttribute="bottom" secondItem="Cyt-GM-NWD" secondAttribute="bottom" id="pMe-B3-RS0"/>
+                                    <constraint firstItem="Cyt-GM-NWD" firstAttribute="top" secondItem="cOL-pB-0ej" secondAttribute="top" id="tGe-oa-d0v"/>
+                                    <constraint firstAttribute="trailing" secondItem="Cyt-GM-NWD" secondAttribute="trailing" id="yb7-oo-Cg5"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="xgX-Wg-WWq"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cOL-pB-0ej" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Vhb-aD-hPx"/>
+                            <constraint firstItem="cOL-pB-0ej" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Xc2-Ly-Pdc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cOL-pB-0ej" secondAttribute="bottom" id="ib0-Jx-B5B"/>
+                            <constraint firstAttribute="trailing" secondItem="cOL-pB-0ej" secondAttribute="trailing" id="leF-64-1la"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="26" y="-2"/>
+        </scene>
+        <!--Photo Collection-->
+        <scene sceneID="mfM-xa-ZTd">
+            <objects>
+                <viewController id="pWw-cE-z05" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3gg-YZ-KRG"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ulu-AT-P5o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hnf-A3-uan">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cdg-FG-C5F">
+                                <rect key="frame" x="16" y="74" width="343" height="467"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nature-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ikk-Rr-A4B">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="149"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nature-2" translatesAutoresizingMaskIntoConstraints="NO" id="cQG-gQ-w1o">
+                                        <rect key="frame" x="0.0" y="159" width="343" height="149"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nature-3" translatesAutoresizingMaskIntoConstraints="NO" id="bG8-HE-aX1">
+                                        <rect key="frame" x="0.0" y="318" width="343" height="149"/>
+                                    </imageView>
+                                </subviews>
+                                <variation key="heightClass=compact" axis="horizontal"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="GGR-yc-ZWe">
+                                <rect key="frame" x="16" y="549" width="343" height="79"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="firstBaseline" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="SRz-DB-ZwG">
+                                        <rect key="frame" x="0.0" y="0.0" width="184.5" height="38"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nature" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aT6-9s-B7B">
+                                                <rect key="frame" x="0.0" y="0.0" width="89.5" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="sjf-Jc-U4q">
+                                                <rect key="frame" x="109.5" y="8" width="75" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abt-Pu-2vl">
+                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                        <state key="normal" title="Like"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3P-gs-1iM">
+                                                        <rect key="frame" x="35" y="0.0" width="40" height="30"/>
+                                                        <state key="normal" title="Share"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A collection of nature photos from magdeleine.co" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxS-ob-JiD">
+                                        <rect key="frame" x="0.0" y="38" width="265" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="GGR-yc-ZWe" secondAttribute="trailing" id="Ebj-Io-zv1"/>
+                            <constraint firstItem="cdg-FG-C5F" firstAttribute="top" secondItem="3gg-YZ-KRG" secondAttribute="bottom" constant="10" id="MG4-VB-EUt"/>
+                            <constraint firstItem="GGR-yc-ZWe" firstAttribute="top" secondItem="cdg-FG-C5F" secondAttribute="bottom" constant="8" id="NBB-zs-8q2"/>
+                            <constraint firstItem="cdg-FG-C5F" firstAttribute="leading" secondItem="Hnf-A3-uan" secondAttribute="leadingMargin" id="OQ2-pW-27t"/>
+                            <constraint firstItem="cdg-FG-C5F" firstAttribute="height" secondItem="Hnf-A3-uan" secondAttribute="height" multiplier="0.7" id="mHX-Vn-h49"/>
+                            <constraint firstItem="GGR-yc-ZWe" firstAttribute="leading" secondItem="Hnf-A3-uan" secondAttribute="leadingMargin" id="tOV-0J-Fe2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cdg-FG-C5F" secondAttribute="trailing" id="wdC-Pj-5fZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Photo Collection" id="f80-sL-QTf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HT0-gy-OZj" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1890" y="-2"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WF1-j1-G16">
+            <objects>
+                <navigationController storyboardIdentifier="nav" automaticallyAdjustsScrollViewInsets="NO" id="1rw-uH-96p" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ijY-hx-UM1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pWw-cE-z05" kind="relationship" relationship="rootViewController" id="rGS-Ls-GsM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y1O-P3-nwj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="993" y="-2"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="nature-1" width="1000" height="667"/>
+        <image name="nature-2" width="1024" height="678"/>
+        <image name="nature-3" width="1024" height="683"/>
+    </resources>
 </document>
