@@ -43,6 +43,9 @@
     NSUInteger result = [str length] ?: a;
     NSLog(@"%lu",(unsigned long)result);
     
+    
+    NSLog(@"---%@",[NSURL fileURLWithPath:[self getVideoMergeFilePathString]]);
+    
 }
 
 -(void)call123:(NSString *)a with1:(NSString *)b with2:(NSNumber *)c
@@ -53,6 +56,22 @@
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     
+}
+
+
+- (NSString *)getVideoMergeFilePathString
+{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *path = [paths objectAtIndex:0];
+    path = [path stringByAppendingPathComponent:@"videos"];
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    formatter.dateFormat = @"yyyyMMddHHmmss";
+    NSString *nowTimeStr = [formatter stringFromDate:[NSDate dateWithTimeIntervalSinceNow:0]];
+    
+    NSString *fileName = [[path stringByAppendingPathComponent:nowTimeStr] stringByAppendingString:@".mp4"];
+    
+    return fileName;
 }
 
 
