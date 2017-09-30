@@ -31,11 +31,11 @@
     
     
     NSLog(@"%@",[@"/Users/gaoshan/Desktop/学习资料/15 - 环信项目/1231视频/1231装逼特技/资料/素材/plugin.png" MIMEType]);
+
     
-    
-    [self.view mas_makeConstraints:^(MASConstraintMaker *make) {
-        
-    }];
+//    [self.view mas_makeConstraints:^(MASConstraintMaker *make) {
+//        
+//    }];
     
     
     NSString *str = @"134";

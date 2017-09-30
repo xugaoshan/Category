@@ -7,24 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		041007981F7266BE00B6359B /* Button_Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 041007971F7266BE00B6359B /* Button_Block.m */; };
-		04773EA01F7F4D4100474B7F /* SkinTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04773E9F1F7F4D4100474B7F /* SkinTool.m */; };
+		04773EAE1F7F903900474B7F /* SkinTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04773EAD1F7F903900474B7F /* SkinTool.m */; };
+		04773EB31F7F90FC00474B7F /* Foundation+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04773EB21F7F90FC00474B7F /* Foundation+Tool.m */; };
+		04773EB61F7F910600474B7F /* Button_Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 04773EB51F7F910600474B7F /* Button_Block.m */; };
+		04773EDD1F7F917E00474B7F /* skin in Resources */ = {isa = PBXBuildFile; fileRef = 04773EDC1F7F917E00474B7F /* skin */; };
+		04773EE01F7F91DA00474B7F /* ChangeThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04773EDF1F7F91DA00474B7F /* ChangeThemeViewController.m */; };
+		04773EE31F7F91FA00474B7F /* ChangeThemeTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04773EE21F7F91FA00474B7F /* ChangeThemeTwoViewController.m */; };
 		04AA6FB41F6A2FB3007204A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AA6FB31F6A2FB3007204A2 /* main.m */; };
 		04AA6FB71F6A2FB3007204A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AA6FB61F6A2FB3007204A2 /* AppDelegate.m */; };
 		04AA6FBA1F6A2FB3007204A2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AA6FB91F6A2FB3007204A2 /* ViewController.m */; };
 		04AA6FBD1F6A2FB3007204A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04AA6FBB1F6A2FB3007204A2 /* Main.storyboard */; };
 		04AA6FBF1F6A2FB3007204A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04AA6FBE1F6A2FB3007204A2 /* Assets.xcassets */; };
 		04AA6FC21F6A2FB3007204A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04AA6FC01F6A2FB3007204A2 /* LaunchScreen.storyboard */; };
-		04AA6FCB1F6A3481007204A2 /* Foundation+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AA6FCA1F6A3481007204A2 /* Foundation+Tool.m */; };
 		FCFD7F779F941D860FBC0B1F /* libPods-Category.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 759CC66D596D95C1A06C05D2 /* libPods-Category.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		041007961F7266BE00B6359B /* Button_Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Button_Block.h; sourceTree = "<group>"; };
-		041007971F7266BE00B6359B /* Button_Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Button_Block.m; sourceTree = "<group>"; };
 		045C348D1F70B22B00477718 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		04773E9E1F7F4D4100474B7F /* SkinTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkinTool.h; sourceTree = "<group>"; };
-		04773E9F1F7F4D4100474B7F /* SkinTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkinTool.m; sourceTree = "<group>"; };
+		04773EA11F7F77FA00474B7F /* singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = singleton.h; sourceTree = "<group>"; };
+		04773EAC1F7F903900474B7F /* SkinTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkinTool.h; sourceTree = "<group>"; };
+		04773EAD1F7F903900474B7F /* SkinTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkinTool.m; sourceTree = "<group>"; };
+		04773EB11F7F90FC00474B7F /* Foundation+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Foundation+Tool.h"; sourceTree = "<group>"; };
+		04773EB21F7F90FC00474B7F /* Foundation+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Tool.m"; sourceTree = "<group>"; };
+		04773EB41F7F910600474B7F /* Button_Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Button_Block.h; sourceTree = "<group>"; };
+		04773EB51F7F910600474B7F /* Button_Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Button_Block.m; sourceTree = "<group>"; };
+		04773EDC1F7F917E00474B7F /* skin */ = {isa = PBXFileReference; lastKnownFileType = folder; path = skin; sourceTree = "<group>"; };
+		04773EDE1F7F91DA00474B7F /* ChangeThemeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeThemeViewController.h; sourceTree = "<group>"; };
+		04773EDF1F7F91DA00474B7F /* ChangeThemeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeThemeViewController.m; sourceTree = "<group>"; };
+		04773EE11F7F91FA00474B7F /* ChangeThemeTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeThemeTwoViewController.h; sourceTree = "<group>"; };
+		04773EE21F7F91FA00474B7F /* ChangeThemeTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeThemeTwoViewController.m; sourceTree = "<group>"; };
 		04AA6FAF1F6A2FB3007204A2 /* Category.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Category.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04AA6FB31F6A2FB3007204A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04AA6FB51F6A2FB3007204A2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -35,8 +46,6 @@
 		04AA6FBE1F6A2FB3007204A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04AA6FC11F6A2FB3007204A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04AA6FC31F6A2FB3007204A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04AA6FC91F6A3481007204A2 /* Foundation+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Foundation+Tool.h"; sourceTree = "<group>"; };
-		04AA6FCA1F6A3481007204A2 /* Foundation+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Tool.m"; sourceTree = "<group>"; };
 		16A434D0D1D602CFA8419809 /* Pods-Category.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Category.release.xcconfig"; path = "Pods/Target Support Files/Pods-Category/Pods-Category.release.xcconfig"; sourceTree = "<group>"; };
 		759CC66D596D95C1A06C05D2 /* libPods-Category.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Category.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D85DB3368FABF8CBE2BB5B /* Pods-Category.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Category.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Category/Pods-Category.debug.xcconfig"; sourceTree = "<group>"; };
@@ -54,6 +63,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04773EAB1F7F8FEA00474B7F /* 换肤 */ = {
+			isa = PBXGroup;
+			children = (
+				04773EDC1F7F917E00474B7F /* skin */,
+				04773EAC1F7F903900474B7F /* SkinTool.h */,
+				04773EAD1F7F903900474B7F /* SkinTool.m */,
+				04773EDE1F7F91DA00474B7F /* ChangeThemeViewController.h */,
+				04773EDF1F7F91DA00474B7F /* ChangeThemeViewController.m */,
+				04773EE11F7F91FA00474B7F /* ChangeThemeTwoViewController.h */,
+				04773EE21F7F91FA00474B7F /* ChangeThemeTwoViewController.m */,
+			);
+			path = "换肤";
+			sourceTree = "<group>";
+		};
+		04773EAF1F7F90CC00474B7F /* 所有的Category */ = {
+			isa = PBXGroup;
+			children = (
+				04773EB11F7F90FC00474B7F /* Foundation+Tool.h */,
+				04773EB21F7F90FC00474B7F /* Foundation+Tool.m */,
+			);
+			path = "所有的Category";
+			sourceTree = "<group>";
+		};
+		04773EB01F7F90CC00474B7F /* 自定义按钮(Block方式) */ = {
+			isa = PBXGroup;
+			children = (
+				04773EB41F7F910600474B7F /* Button_Block.h */,
+				04773EB51F7F910600474B7F /* Button_Block.m */,
+			);
+			path = "自定义按钮(Block方式)";
+			sourceTree = "<group>";
+		};
 		04AA6FA61F6A2FB3007204A2 = {
 			isa = PBXGroup;
 			children = (
@@ -91,14 +132,12 @@
 		04AA6FB21F6A2FB3007204A2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				04773E9E1F7F4D4100474B7F /* SkinTool.h */,
-				04773E9F1F7F4D4100474B7F /* SkinTool.m */,
-				04AA6FC91F6A3481007204A2 /* Foundation+Tool.h */,
-				04AA6FCA1F6A3481007204A2 /* Foundation+Tool.m */,
+				04773EAF1F7F90CC00474B7F /* 所有的Category */,
+				04773EB01F7F90CC00474B7F /* 自定义按钮(Block方式) */,
+				04773EAB1F7F8FEA00474B7F /* 换肤 */,
+				04773EA11F7F77FA00474B7F /* singleton.h */,
 				04AA6FB31F6A2FB3007204A2 /* main.m */,
 				045C348D1F70B22B00477718 /* PrefixHeader.pch */,
-				041007961F7266BE00B6359B /* Button_Block.h */,
-				041007971F7266BE00B6359B /* Button_Block.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -183,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04AA6FC21F6A2FB3007204A2 /* LaunchScreen.storyboard in Resources */,
+				04773EDD1F7F917E00474B7F /* skin in Resources */,
 				04AA6FBF1F6A2FB3007204A2 /* Assets.xcassets in Resources */,
 				04AA6FBD1F6A2FB3007204A2 /* Main.storyboard in Resources */,
 			);
@@ -246,12 +286,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04AA6FCB1F6A3481007204A2 /* Foundation+Tool.m in Sources */,
+				04773EB31F7F90FC00474B7F /* Foundation+Tool.m in Sources */,
+				04773EB61F7F910600474B7F /* Button_Block.m in Sources */,
 				04AA6FBA1F6A2FB3007204A2 /* ViewController.m in Sources */,
-				04773EA01F7F4D4100474B7F /* SkinTool.m in Sources */,
+				04773EE31F7F91FA00474B7F /* ChangeThemeTwoViewController.m in Sources */,
+				04773EAE1F7F903900474B7F /* SkinTool.m in Sources */,
 				04AA6FB71F6A2FB3007204A2 /* AppDelegate.m in Sources */,
+				04773EE01F7F91DA00474B7F /* ChangeThemeViewController.m in Sources */,
 				04AA6FB41F6A2FB3007204A2 /* main.m in Sources */,
-				041007981F7266BE00B6359B /* Button_Block.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
