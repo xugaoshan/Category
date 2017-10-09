@@ -36,22 +36,23 @@
     
     [self changeImages];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeImages) name:CHANGETHEME object:nil];
     
 }
 - (IBAction)changeToOrangeSkin {
-    if ([SkinTool setSKinColor:@"orange"]) [self changeImages];
+    [SkinTool setSKinColor:@"orange"];
 }
 
 - (IBAction)changeToBlueSkin {
-    if ([SkinTool setSKinColor:@"blue"]) [self changeImages];
+    [SkinTool setSKinColor:@"blue"];
 }
 
 - (IBAction)changeToRedSkin {
-    if ([SkinTool setSKinColor:@"red"]) [self changeImages];
+    [SkinTool setSKinColor:@"red"];
 }
 
 - (IBAction)changeToGreenSkin {
-    if ([SkinTool setSKinColor:@"green"]) [self changeImages];
+    [SkinTool setSKinColor:@"green"];
 }
 
 - (void)changeImages
@@ -59,6 +60,11 @@
     self.faceImageView.image = [SkinTool skinToolWithImageName:@"face"];
     self.heartImageView.image = [SkinTool skinToolWithImageName:@"heart"];
     self.rectImageView.image = [SkinTool skinToolWithImageName:@"rect"];
+}
+
+-(void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 

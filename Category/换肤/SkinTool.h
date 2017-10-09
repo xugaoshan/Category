@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-//改变皮肤的消息名称
+//一旦改变皮肤 就会发出这个名称的消息
 UIKIT_EXTERN NSString *const CHANGETHEME;
 
 @interface SkinTool : NSObject

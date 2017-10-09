@@ -8,15 +8,16 @@
 
 #import "SkinTool.h"
 
+//const 修饰的是常量
 NSString *const CHANGETHEME = @"changeTheme";
 
-//用static修饰的全局变量 只能在本文件使用 不管是声明在.h还是.m 都不可以被其他文件使用
+//用static修饰的全局变量 只能在本文件使用 不管是声明在.h还是.m 都不可以被其他文件使用 所以外面不可以再用extern
 static NSString *_skinColor;
 
 @implementation SkinTool
 
 
-//类的第一个方法调用之前会调用
+//类的第一个方法调用之前会调用 而load方法是只要被加载就会调用
 + (void)initialize
 {
     _skinColor = [[NSUserDefaults standardUserDefaults] objectForKey:@"skinColor"];
