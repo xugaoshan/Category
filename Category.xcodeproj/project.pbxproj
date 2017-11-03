@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0409D7181FA1CE9300F996AC /* myTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0409D7171FA1CE9300F996AC /* myTableViewController.m */; };
+		0463F02F1FAC63ED0033CA40 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0463F02D1FAC63ED0033CA40 /* TestViewController.m */; };
+		0463F0301FAC63ED0033CA40 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0463F02E1FAC63ED0033CA40 /* TestViewController.xib */; };
 		04773EAE1F7F903900474B7F /* SkinTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04773EAD1F7F903900474B7F /* SkinTool.m */; };
 		04773EB31F7F90FC00474B7F /* Foundation+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04773EB21F7F90FC00474B7F /* Foundation+Tool.m */; };
 		04773EB61F7F910600474B7F /* Button_Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 04773EB51F7F910600474B7F /* Button_Block.m */; };
@@ -23,7 +26,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0409D7161FA1CE9300F996AC /* myTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = myTableViewController.h; sourceTree = "<group>"; };
+		0409D7171FA1CE9300F996AC /* myTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myTableViewController.m; sourceTree = "<group>"; };
 		045C348D1F70B22B00477718 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		0463F02C1FAC63ED0033CA40 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		0463F02D1FAC63ED0033CA40 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		0463F02E1FAC63ED0033CA40 /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 		04773EA11F7F77FA00474B7F /* singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = singleton.h; sourceTree = "<group>"; };
 		04773EAC1F7F903900474B7F /* SkinTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkinTool.h; sourceTree = "<group>"; };
 		04773EAD1F7F903900474B7F /* SkinTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkinTool.m; sourceTree = "<group>"; };
@@ -63,6 +71,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0409D7151FA1CE7200F996AC /* tableView */ = {
+			isa = PBXGroup;
+			children = (
+				0409D7161FA1CE9300F996AC /* myTableViewController.h */,
+				0409D7171FA1CE9300F996AC /* myTableViewController.m */,
+				0463F02C1FAC63ED0033CA40 /* TestViewController.h */,
+				0463F02D1FAC63ED0033CA40 /* TestViewController.m */,
+				0463F02E1FAC63ED0033CA40 /* TestViewController.xib */,
+			);
+			path = tableView;
+			sourceTree = "<group>";
+		};
 		04773EAB1F7F8FEA00474B7F /* 换肤 */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +152,7 @@
 		04AA6FB21F6A2FB3007204A2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0409D7151FA1CE7200F996AC /* tableView */,
 				04773EAF1F7F90CC00474B7F /* 所有的Category */,
 				04773EB01F7F90CC00474B7F /* 自定义按钮(Block方式) */,
 				04773EAB1F7F8FEA00474B7F /* 换肤 */,
@@ -222,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04AA6FC21F6A2FB3007204A2 /* LaunchScreen.storyboard in Resources */,
+				0463F0301FAC63ED0033CA40 /* TestViewController.xib in Resources */,
 				04773EDD1F7F917E00474B7F /* skin in Resources */,
 				04AA6FBF1F6A2FB3007204A2 /* Assets.xcassets in Resources */,
 				04AA6FBD1F6A2FB3007204A2 /* Main.storyboard in Resources */,
@@ -290,10 +312,12 @@
 				04773EB61F7F910600474B7F /* Button_Block.m in Sources */,
 				04AA6FBA1F6A2FB3007204A2 /* ViewController.m in Sources */,
 				04773EE31F7F91FA00474B7F /* ChangeThemeTwoViewController.m in Sources */,
+				0463F02F1FAC63ED0033CA40 /* TestViewController.m in Sources */,
 				04773EAE1F7F903900474B7F /* SkinTool.m in Sources */,
 				04AA6FB71F6A2FB3007204A2 /* AppDelegate.m in Sources */,
 				04773EE01F7F91DA00474B7F /* ChangeThemeViewController.m in Sources */,
 				04AA6FB41F6A2FB3007204A2 /* main.m in Sources */,
+				0409D7181FA1CE9300F996AC /* myTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
