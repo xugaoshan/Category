@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Foundation+Tool.h"
 
+//#define k_nsef 0
 
 @interface ViewController ()<UIScrollViewDelegate>
 
@@ -46,6 +47,37 @@
     
     NSLog(@"---%@",[NSURL fileURLWithPath:[self getVideoMergeFilePathString]]);
     
+    
+    
+    // ifdef不判断真假  elif可以和ifdef或者ifndef一块使用 无论何时elif都会判断真假
+    #ifdef k_nsef
+    NSLog(@"===2");
+    #elif 3<2
+    NSLog(@"===3");
+    #else
+    NSLog(@"===4");
+    #endif
+    
+    
+    
+    NSString *s = @"wefwegrwefg";
+    NSMutableArray *array = (NSMutableArray *)[s componentsSeparatedByString:@"r"];
+    NSLog(@"%lu",(unsigned long)array.count);
+    NSLog(@"%@",array);
+    
+    for (int i = 0; i < array.count; i++)
+    {
+        NSArray *array1 = [array[i] componentsSeparatedByString:@"f"];
+        [array replaceObjectAtIndex:i withObject:array1];
+    }
+    NSLog(@"%@",array);
+    
+    NSMutableArray *array1 = [NSMutableArray new];
+    NSLog(@"%lu",(unsigned long)array1.count);
+    
+    
+    
+    [self test];
 }
 
 -(void)call123:(NSString *)a with1:(NSString *)b with2:(NSNumber *)c
@@ -74,5 +106,23 @@
     return fileName;
 }
 
+-(void)test
+{
+//    // 问题：以下代码是在主线程执行的，会不会产生死锁？会！
+//    NSLog(@"执行任务1");
+//
+//    dispatch_queue_t queue = dispatch_queue_create("myqueu", DISPATCH_QUEUE_SERIAL);
+//    dispatch_async(queue, ^{ // 0
+//        NSLog(@"执行任务2");
+//
+//        dispatch_sync(queue, ^{ // 1
+//            NSLog(@"执行任务3");
+//        });
+//
+//        NSLog(@"执行任务4");
+//    });
+//
+//    NSLog(@"执行任务5");
+}
 
 @end

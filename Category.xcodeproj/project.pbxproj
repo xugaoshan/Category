@@ -214,7 +214,7 @@
 				TargetAttributes = {
 					04AA6FAE1F6A2FB3007204A2 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = UJLXBU38UE;
+						DevelopmentTeam = KZP3GQWEF4;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -440,15 +440,16 @@
 			baseConfigurationReference = 87D85DB3368FABF8CBE2BB5B /* Pods-Category.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = UJLXBU38UE;
+				CODE_SIGN_IDENTITY = "iPhone Developer: gaoshanxu@foxmail.com (5P2PY25Q2F)";
+				DEVELOPMENT_TEAM = KZP3GQWEF4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Category/PrefixHeader.pch;
 				INFOPLIST_FILE = Category/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.feili.quanCai;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "36aab757-1a62-49b3-99bd-820e324150b8";
-				PROVISIONING_PROFILE_SPECIFIER = dev_yxb;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -457,7 +458,8 @@
 			baseConfigurationReference = 16A434D0D1D602CFA8419809 /* Pods-Category.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: gaoshanxu@foxmail.com (5P2PY25Q2F)";
+				DEVELOPMENT_TEAM = KZP3GQWEF4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Category/PrefixHeader.pch;
 				INFOPLIST_FILE = Category/Info.plist;
