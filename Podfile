@@ -6,5 +6,7 @@ inhibit_all_warnings!
 target "Category" do
 
     pod 'Masonry'
+    
+    
 
 end
