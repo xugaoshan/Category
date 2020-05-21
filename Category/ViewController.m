@@ -23,7 +23,7 @@
     [self performSelector:NSSelectorFromString(@"call123:with1:with2:") withObjects:@[@"1",[NSNull null],@6]];
     
     
-    self.strArr = @[@"1",@"呵呵",@1.999];
+    self.strArr = @[@"1",@"呵呵呵呵哈哈",@1.999];
     NSLog(@"%@",_strArr);
     
     
