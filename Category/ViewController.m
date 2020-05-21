@@ -23,13 +23,9 @@
     [self performSelector:NSSelectorFromString(@"call123:with1:with2:") withObjects:@[@"1",[NSNull null],@6]];
     
     
-    self.strArr = @[@"1",@"呵呵",@1.999];
+    self.strArr = @[@"1",@"呵呵32323",@1.999];
     NSLog(@"%@",_strArr);
-    
-    
-     
-     
-    
+
     
     NSDictionary *dic = @{@"一":@1.87,@"二":@"哈哈哈",@"三":@[@"145",@"呵呵",@1.9]};
     NSLog(@"%@",dic);
